@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trivia Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--
+        <link
+        href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto+Slab"
+        rel="stylesheet"
+      />
+    -->
+  </head>
+
+  <body>
+    <div id="TriviaGame">
+      <h1
+        style="color: rgb(143, 82, 82);
+      background-color: rgb(248, 244, 244);"
+      >
+         Trivia Game
+      </h1>
+    </div>
+
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div
+            id="cardHeader"
+            class="card  displayContainer"
+            style="width: 18rem;"
+          >
+            <div
+              class="card-header rounded"
+              style="background-color:rgb(143, 82, 82); "
+            >
+              <h4>Technical quiz:</h4>
+            </div>
+            <h6>
+              <ul class="list-group list-group-flush rounded" style="color: rgb(143, 82, 82);
+              background-color: rgb(248, 244, 244);">
+                <li class="list-group-item">
+                  There are 10 questions with multiple choice answers to choose
+                  from
+                </li>
+                <li class="list-group-item">
+                  You will be given 30 seconds for each question to choose your
+                  answer.
+                </li>
+                <li class="list-group-item">Final score will be displayed</li>
+              </ul>
+            </h6>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div id="questionContainer" class="displayContainer">
+            <h1>Quiz</h1>
+            <hr style="margin-bottom: 20px" />
+
+            <p id="question"></p>
+            <div id="buttons">
+              <button id="btn1" data="1"><span id="Choice1"></span></button>
+              <button id="btn2" data="2"><span id="Choice2"></span></button>
+              <button id="btn3" data="3"><span id="Choice3"></span></button>
+              <button id="btn4" data="4"><span id="Choice4"></span></button>
+            </div>
+
+            <div><footer id="questionCounter">Question x of y</footer></div>
+          </div>
+          <div
+            id="result"
+            class="card displayContainer"
+            style="width: 18rem; padding:40px;"
+          >
+            <div
+              class="card-header rounded"
+              style="background-color:rgb(143, 82, 82);">
+              <h4>Result</h4>
+            </div>
+            <ul class="list-group list-group-flush" style="color: rgb(143, 82, 82);
+            background-color: rgb(248, 244, 244);">
+              <h6>
+              <li id="correctScore" class="list-group-item"></li>
+              <li id="wrongScore" class="list-group-item"></li>
+            </h6>
+            </ul>
+          </div>
+        </div>
+        
+          <div class="col-sm-3">
+          <div id="timer" class="card displayContainer" style="width: 18rem; padding:40px;">
+            <div class="card-header rounded" style="background-color:rgb(143, 82, 82);"><h4>Time left</h4></div>
+            <p id="timerSecsLeft"></p> <h5>Seconds</h5>
+          </div>
+       
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script src="assets/javascript/app.js"></script>
+    <!-- Script -->
+    <script></script>
+  </body>
+</html>
