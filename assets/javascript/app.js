@@ -10,6 +10,26 @@ var questions = [
     4
   ),
   new QuestionSet(
+    "Which class provides a responsive fixed width container??",
+    [
+      ".container-fluid",
+      ".container-fixed",
+      ".container",
+      ".container-responsive"
+    ],
+    3
+  ),
+  new QuestionSet(
+    "Which jQuery method is used to hide selected elements?",
+    ["display(none)", "hide()", "visible(false)", "hidden()"],
+    2
+  ),
+  new QuestionSet(
+    "How do you round the number 7.25, to the nearest integer?",
+    ["rnd(7.25)", "Math.round(7.25)", "round(7.25)", "Math.rnd(7.25)"],
+    2
+  ),
+  new QuestionSet(
     "Which language is used for styling web pages?",
     ["HTML", "JQuery", "CSS", "XML"],
     3
